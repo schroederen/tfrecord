@@ -98,6 +98,6 @@ class Reader:
 
     def read_sample(self):
         try:
-            return __next__(self)
+            return next(self)
         except StopIteration:
             return None
